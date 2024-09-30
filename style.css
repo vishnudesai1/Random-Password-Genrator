@@ -17,8 +17,8 @@ html,body{
     max-width: 750px;
 }
 #main h1{
-    font-size: 70px;
-    line-height: 75px;
+    font-size: 5vw;
+    line-height: 5vw;
     font-weight:600;
 }
 #main h1 span{
@@ -40,13 +40,13 @@ html,body{
 #displayResult input{
     border: 0;
     outline: 0;
-    font-size: 22px;
+    font-size: 2vw;
     color: #fff;
     background-color: #24232B;
 
 }
 #displayResult img{
-    height: 30px;
+    height: 2vw;
     cursor: pointer;
 }
 #button button{
@@ -56,12 +56,51 @@ html,body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 35px;
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: 500;
     background-color: #A4FFAF;
     border-radius: 10px;
     cursor: pointer;
 }
 #button button img{
-    height: 60px;
+    height: 5vw;
+}
+
+
+@media screen and (max-width:768px) {
+    #main h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    #displayResult input{
+        font-size: 5vw;
+    }
+    #button button{
+        font-size: 6vw;
+    }
+    #button button img{
+        height: 12vw;
+    }
+    #displayResult img{
+        height: 6vw;
+    }
+}
+@media screen and (max-width:480px) {
+    #main h1{
+        font-size: 12vw;
+        line-height: 13vw;
+    }
+    #displayResult input{
+        font-size: 5vw;
+    }
+    #button button{
+        font-size: 5vw;
+        padding: 15px 20px;
+    }
+    #button button img{
+        height: 12vw;
+    }
+    #displayResult img{
+        height: 6vw;
+    }
 }
